@@ -1,0 +1,11 @@
+{
+    "name"              :   "{{ .Name }}",
+    "namespace"         :   "{{ .Name }}",
+    "type"              :   "general",
+    "version"           :   "1.0.0",
+    "pluginIcon"        :   "icon_plugin_xs.png",
+    "description"       :   "{{ .Name }}",
+    "author"            :   "plentysystems AG",
+    "authorIcon"        :   "icon_author_xs.png",
+    "serviceProvider"   :   "{{ .Name }}\\Providers\\{{ .Name }}ServiceProvider"
+}

@@ -1,0 +1,1 @@
+# Release Notes für {{ .Name }}
