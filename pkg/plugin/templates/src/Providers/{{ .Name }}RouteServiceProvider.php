@@ -3,7 +3,7 @@
 namespace {{ .Name }}\Providers;
 
 use Plenty\Plugin\RouteServiceProvider;
-use Plenty\Plugin\Routing\Router;
+use Plenty\Plugin\Routing\ApiRouter;
 
 /**
  * Class {{ .Name }}RouteServiceProvider
@@ -17,7 +17,7 @@ class {{ .Name }}RouteServiceProvider extends RouteServiceProvider
     public function map(ApiRouter $apiRouter)
     {
         $apiRouter->version(['v1'], ['namespace' => '{{ .Name }}\Controllers', 'middleware' => ['oauth']], function ($router) {
-            $router->get('test', '{{ .Name }}Controller@test'));
-        }
+            $router->get('test', '{{ .Name }}Controller@test');
+        });
     }
 }
